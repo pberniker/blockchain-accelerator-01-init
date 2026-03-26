@@ -41,12 +41,41 @@ contract SmartContractTest {
     }
 
     // Struncts
-    strunct person {
+    struct person {
         string name;
         uint256 age;
     }
 
+    // Modifiers
+    modifier divisionValidation(uint num2_) {
+        if(num2_ == 0) revert();
+        _;
+    }
+
+    // Events
+    event additionEvent(uint num1_, uint num2_, uint result);
+
+    // Construct
     constructor() {
         map[addr] = 1;
     }
+
+    // Functions [function name(argumnets) + visibility (external | internal | public | private) + pure + modifiers + return value]
+
+    // Externals
+    function add(uint num1_, uint num2_) external returns(uint) {
+        uint result_ = num1_ + num2_;
+        emit additionEvent(num1_, num2_, result_);
+        return result_;
+    }
+
+    function substraction(uint num1_, uint num2_) external pure returns(uint result_) {
+        result_ = num1_ - num2_;
+    }
+
+    function divide(uint num1_, uint num2_) external pure divisionValidation(num2_) returns(uint result_) {
+        result_ = num1_ - num2_;
+    }    
+
+    // Internals
 }

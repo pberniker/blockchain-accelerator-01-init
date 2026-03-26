@@ -4,7 +4,110 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "num1_",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "num2_",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "result",
+						"type": "uint256"
+					}
+				],
+				"name": "additionEvent",
+				"type": "event"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num2_",
+						"type": "uint256"
+					}
+				],
+				"name": "add",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num2_",
+						"type": "uint256"
+					}
+				],
+				"name": "divide",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "result_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "num1_",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "num2_",
+						"type": "uint256"
+					}
+				],
+				"name": "substraction",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "result_",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +136,11 @@
 	},
 	"sources": {
 		"Contracts/SmartContractTest.sol": {
-			"keccak256": "0x3e952d5e0960aa3d24cf3ccc64bcaa8e96f31edf8c98d968786d69d8640e4845",
+			"keccak256": "0xbee7bd3459fa65ee06840201c2de1872e73e1cbec870eb74699b5f30b027499b",
 			"license": "LGPL-3.0-only",
 			"urls": [
-				"bzz-raw://3dfdee6f3b7a611a91f79f0b266767189e080e88d3c4e8dc98129113488cb6ce",
-				"dweb:/ipfs/QmeqtHkLFvDEC6GrbHfqsqB2af9XBTK6jqTecn4AGGcbuC"
+				"bzz-raw://6ee2693d7f063c48c44daaf8ebe72be9624f7153bafccfd4e01a656934ec4ff5",
+				"dweb:/ipfs/QmRw7eipwyHPDQgiaFsbGzGiGQDZcvos8UeUMhRL6xeAFx"
 			]
 		}
 	},

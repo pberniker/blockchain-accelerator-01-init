@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.24+commit.e11b9ed9"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Contracts/SmartContractTest.sol": "SmartContractTest"
+		},
+		"evmVersion": "shanghai",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Contracts/SmartContractTest.sol": {
+			"keccak256": "0x3e952d5e0960aa3d24cf3ccc64bcaa8e96f31edf8c98d968786d69d8640e4845",
+			"license": "LGPL-3.0-only",
+			"urls": [
+				"bzz-raw://3dfdee6f3b7a611a91f79f0b266767189e080e88d3c4e8dc98129113488cb6ce",
+				"dweb:/ipfs/QmeqtHkLFvDEC6GrbHfqsqB2af9XBTK6jqTecn4AGGcbuC"
+			]
+		}
+	},
+	"version": 1
+}

@@ -60,7 +60,7 @@ contract SmartContractTest {
         map[addr] = 1;
     }
 
-    // Functions [function name(argumnets) + visibility (external | internal | public | private) + pure + modifiers + return value]
+    // Functions [function name(argumnets) + visibility (external | internal | public | private) + pure? + view? + payable? + modifiers? + returnValue]
 
     // Externals
     function add(uint num1_, uint num2_) external returns(uint) {
